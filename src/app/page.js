@@ -1,10 +1,7 @@
-// import Link from "../../design/components/link/link";
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main>
-      <h1 className="heading-xl">XL Heading</h1>
+      {/* <h1 className="heading-xl">XL Heading</h1>
       <h1 className="heading-lg">Large Heading</h1>
       <h1 className="heading-md">Medium Heading</h1>
       <button className="btn">Button</button>
@@ -12,16 +9,19 @@ export default function Home() {
       <br />
       <a href="#" className="link">
         Link Hereee
-      </a>
-
-      {/* <Link href="#" className="link">hello</Link> */}
-      <Link href="/about" className="link">
-        About
-      </Link>
+      </a> */}
+      <div className="right-sidebar">
+        <p>Available for Freelance → </p>
+      </div>
 
       <header>
-        <h1>Gjonson Berisha</h1>
-        <p>Web Developer</p>
+        <div className="title-side">
+          <h1 className="heading-xl title">Gjonson Berisha</h1>
+          <p className="heading-md title-desc">Web Developer</p>
+        </div>
+        <div className="potrait-side">
+          <div className="img-me"></div>
+        </div>
       </header>
 
       <section id="about">
