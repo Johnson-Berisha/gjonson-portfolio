@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 
 :root {
   /* colors */
@@ -11,7 +11,7 @@
   --color-accent-20: rgba(121, 193, 255, 0.151);
 
   /* typography */
-  --font-body: 'Merriweather', serif;
+  --font-body: "Merriweather", serif;
   --font-size-base: 16px;
   --font-size-lg: 28px;
   --font-size-xl: 38px;
@@ -26,8 +26,7 @@
   --transition: 0.3s ease;
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +35,7 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -96,9 +95,8 @@ body {
 
 /* ============= */
 
-
 main {
-  max-width:840px;
+  max-width: 840px;
   width: 100%;
   padding: 4rem 2rem;
 }
@@ -120,7 +118,9 @@ nav li {
   cursor: pointer;
 }
 
-nav ul, nav li::marker { /* both since ::marekr is not supported everywhere */
+nav ul,
+nav li::marker {
+  /* both since ::marekr is not supported everywhere */
   color: var(--color-accent);
 }
 
@@ -131,25 +131,34 @@ nav ul, nav li::marker { /* both since ::marekr is not supported everywhere */
   transition: width var(--transition);
 }
 
-nav a {
+nav link {
   color: var(--color-accent);
   text-decoration: none;
 }
 
-nav a:hover {
+nav link:hover {
   color: var(--color-accent-hover);
 }
 
-
-
-nav li:hover .u1 {
-  width: 80%;
-}
-
-nav li:hover .u2 {
+nav li:hover .longer-underline {
   width: 100%;
 }
 
-nav li:hover .u3 {
-  width: 95%;
+nav li:hover .shorter-underline {
+  width: 80%;
+}
+
+/* Progress Bar */
+
+.progress-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-text);
+}
+
+#about {
+  margin-bottom: 40rem;
 }
