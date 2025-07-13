@@ -10,10 +10,6 @@ export default function Home() {
       <a href="#" className="link">
         Link Hereee
       </a> */}
-      <div className="right-sidebar">
-        <p>Available for Freelance → </p>
-      </div>
-
       <header>
         <div className="title-side">
           <h1 className="heading-xl title">Gjonson Berisha</h1>
@@ -27,13 +23,34 @@ export default function Home() {
       <section id="about">
         <h2>About Me</h2>
         <p>
-          Im Gjonson, a young web developer from Kosovo building clean,
-          responsive websites. lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla
+          <span>
+            My name is Gjonson Berisha, and I’m an aspiring web developer based
+            in Kosovo. I specialize in front-end development with a strong focus
+            on clean, maintainable code, accessibility, and responsive design.
+          </span>
+          <span>
+            I primarily work with HTML, CSS, and JavaScript, and I’m currently
+            deepening my skills with modern frameworks like Next.js and React. I
+            enjoy building intuitive user interfaces, exploring UI/UX best
+            practices, and crafting experiences that feel fast, stable, and
+            user-focused.
+          </span>
+          <span>
+            My work is driven by constant learning and curiosity. I regularly
+            build personal projects to improve my knowledge, challenge myself,
+            and better understand how professional-grade web applications are
+            structured and deployed.
+          </span>
+          <span>
+            While I’m still early in my journey, I take every line of code
+            seriously and aim to grow into a developer who builds tools people
+            genuinely enjoy using.
+          </span>
+          <span>
+            I’m currently focused on improving my CSS skills, building
+            full-stack web apps, and preparing for real-world freelance and
+            collaboration opportunities in the near future.
+          </span>
         </p>
       </section>
 
