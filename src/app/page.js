@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main>
@@ -21,7 +23,7 @@ export default function Home() {
       </header>
 
       <section id="about">
-        <h2>About Me</h2>
+        <h2 className="heading-md">About Me</h2>
         <p>
           <span>
             My name is Gjonson Berisha, and I’m an aspiring web developer based
@@ -55,8 +57,36 @@ export default function Home() {
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
-        {/* We'll add projects later */}
+        <h2 className="heading-md">Projects</h2>
+        <p>Some of the projects i have worked on and are still working in:</p>
+
+        <div className="projects-wrapper">
+          <div className="projects-cards">
+            <div className="project">
+              <Image
+                src="/interactive-protfolio.png"
+                alt="Project 1"
+                width={300}
+                height={200}
+                className="project-image"
+              />
+              <h3>Project 1</h3>
+            </div>
+            <div className="project">
+              <Image
+                src="/berisha-al.png"
+                alt="Project 2"
+                width={300}
+                height={200}
+                className="project-image"
+              />
+              <h3>Project 2</h3>
+            </div>
+            <div className="project demo"></div>
+            <div className="project demo"></div>
+            <div className="project demo"></div>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
