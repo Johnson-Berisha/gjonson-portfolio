@@ -1,6 +1,57 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const slider = scrollRef.current;
+    if (!slider) return;
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    const handleMouseDown = (e) => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    };
+
+    const handleMouseLeave = () => {
+      isDown = false;
+      slider.classList.remove("active");
+    };
+
+    const handleMouseUp = () => {
+      isDown = false;
+      slider.classList.remove("active");
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2; // speed multiplier
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    slider.addEventListener("mousedown", handleMouseDown);
+    slider.addEventListener("mouseleave", handleMouseLeave);
+    slider.addEventListener("mouseup", handleMouseUp);
+    slider.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      slider.removeEventListener("mousedown", handleMouseDown);
+      slider.removeEventListener("mouseleave", handleMouseLeave);
+      slider.removeEventListener("mouseup", handleMouseUp);
+      slider.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
     <main>
       {/* <h1 className="heading-xl">XL Heading</h1>
@@ -58,10 +109,10 @@ export default function Home() {
 
       <section id="projects">
         <h2 className="heading-md">Projects</h2>
-        <p>Some of the projects i have worked on and are still working in:</p>
+        <p>Some of the projects I’ve worked on and am still working on:</p>
 
-        <div className="projects-wrapper">
-          <div className="projects-cards">
+        <div className="scroll-breakout">
+          <div className="projects-cards" ref={scrollRef}>
             <div className="project">
               <Image
                 src="/interactive-protfolio.png"
@@ -85,6 +136,13 @@ export default function Home() {
             <div className="project demo"></div>
             <div className="project demo"></div>
             <div className="project demo"></div>
+            <div className="project">
+              <div
+                style={{ width: "800px", height: "200px", background: "#333" }}
+              >
+                Big test box
+              </div>
+            </div>
           </div>
         </div>
       </section>

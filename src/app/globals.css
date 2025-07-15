@@ -41,6 +41,8 @@ body {
   display: flex;
   justify-content: center;
 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,8 +101,7 @@ main {
   max-width: 750px;
   width: 100%;
   padding: 4rem 2rem;
-
-  transform: translateX(-10%);
+  margin: 0 auto; /* center properly */
 }
 
 section {
@@ -231,28 +232,39 @@ span {
 }
 
 /* projects */
-
-#projects {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.scroll-wrapper {
-  width: 200vw;
+/* Make the scroll area break out of the main's padding */
+.scroll-breakout {
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  overflow-x: auto;
+  overflow-x: visible;
+  padding: 2rem 0;
 }
 
 .projects-cards {
   display: flex;
   gap: 2rem;
-  padding: 2rem;
   overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 2rem;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 2rem;
+
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  border: 2px dashed red;
+}
+.projects-cards.active {
+  cursor: grabbing;
+}
+
+.projects-cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 .project {
@@ -263,7 +275,7 @@ span {
   border-radius: 1.25rem;
   padding: 1rem;
   width: 300px;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .project-image {
@@ -271,17 +283,10 @@ span {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: 1px solid var(--color-text-tertiary);
 }
 
 .project h3 {
   margin-top: 1rem;
   font-size: 1.1rem;
   color: var(--color-text);
-}
-
-.project:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 30px rgba(88, 166, 255, 0.15);
-  border-color: var(--color-accent);
 }
