@@ -14,6 +14,7 @@ export default function Home() {
     let isDown = false;
     let startX;
     let scrollLeft;
+    let animationFrame;
 
     const handleMouseDown = (e) => {
       isDown = true;
@@ -25,19 +26,25 @@ export default function Home() {
     const handleMouseLeave = () => {
       isDown = false;
       slider.classList.remove("active");
+      cancelAnimationFrame(animationFrame);
     };
 
     const handleMouseUp = () => {
       isDown = false;
       slider.classList.remove("active");
+      cancelAnimationFrame(animationFrame);
     };
 
     const handleMouseMove = (e) => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 2; // speed multiplier
-      slider.scrollLeft = scrollLeft - walk;
+      const walk = (x - startX) * 1.8; // adjust speed here
+
+      cancelAnimationFrame(animationFrame);
+      animationFrame = requestAnimationFrame(() => {
+        slider.scrollLeft = scrollLeft - walk;
+      });
     };
 
     slider.addEventListener("mousedown", handleMouseDown);
@@ -50,6 +57,7 @@ export default function Home() {
       slider.removeEventListener("mouseleave", handleMouseLeave);
       slider.removeEventListener("mouseup", handleMouseUp);
       slider.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(animationFrame);
     };
   }, []);
   return (
@@ -133,9 +141,9 @@ export default function Home() {
               />
               <h3>Project 2</h3>
             </div>
-            <div className="project demo"></div>
-            <div className="project demo"></div>
-            <div className="project demo"></div>
+            <div className="project demo">demo</div>
+            <div className="project demo">demo</div>
+            <div className="project demo">demo</div>
             <div className="project">
               <div
                 style={{ width: "800px", height: "200px", background: "#333" }}

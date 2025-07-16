@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
 
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: clip; /* Prevent horizontal scroll */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -249,7 +249,7 @@ span {
   gap: 2rem;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 2rem;
 
@@ -257,8 +257,16 @@ span {
   user-select: none;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
-  border: 2px dashed red;
+
+  scroll-behavior: smooth;
 }
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
 .projects-cards.active {
   cursor: grabbing;
 }
