@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -60,6 +60,9 @@ export default function Home() {
       cancelAnimationFrame(animationFrame);
     };
   }, []);
+
+  // modal for the idividual projects on showcase
+
   return (
     <main>
       {/* <h1 className="heading-xl">XL Heading</h1>
