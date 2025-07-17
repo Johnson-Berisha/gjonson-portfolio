@@ -62,6 +62,10 @@ export default function Home() {
   }, []);
 
   // modal for the idividual projects on showcase
+  function project1Modal() {
+    const project1 = document.querySelector(".p1");
+    project1.classList.toggle("active-modal");
+  }
 
   return (
     <main>
@@ -124,7 +128,7 @@ export default function Home() {
 
         <div className="scroll-breakout">
           <div className="projects-cards" ref={scrollRef}>
-            <div className="project active-modal">
+            <div className="project p1">
               <div className="unhidden">
                 <Image
                   src="/interactive-protfolio.png"
@@ -136,7 +140,14 @@ export default function Home() {
 
                 <div className="project-desc">
                   <h3>Intr. Protfolio</h3>
-                  <Link href="/" className="link">
+                  <Link
+                    href="/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      project1Modal();
+                    }}
+                    className="link"
+                  >
                     View More
                   </Link>
                 </div>
@@ -153,7 +164,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="project">
+            <div className="project p2">
               <Image
                 src="/berisha-al.png"
                 alt="Project 2"
@@ -173,7 +184,11 @@ export default function Home() {
             <div className="project demo">demo</div>
             <div className="project">
               <div
-                style={{ width: "800px", height: "200px", background: "#333" }}
+                style={{
+                  width: "800px",
+                  height: "200px",
+                  background: "#333",
+                }}
               >
                 Big test box
               </div>
