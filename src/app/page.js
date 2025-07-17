@@ -124,19 +124,32 @@ export default function Home() {
 
         <div className="scroll-breakout">
           <div className="projects-cards" ref={scrollRef}>
-            <div className="project">
-              <Image
-                src="/interactive-protfolio.png"
-                alt="Project 1"
-                width={300}
-                height={200}
-                className="project-image"
-              />
+            <div className="project active-modal">
+              <div className="unhidden">
+                <Image
+                  src="/interactive-protfolio.png"
+                  alt="Project 1"
+                  width={300}
+                  height={200}
+                  className="project-image"
+                />
 
-              <div className="project-desc">
-                <h3>Intr. Protfolio</h3>
-                <Link href="/" className="link">
-                  View More
+                <div className="project-desc">
+                  <h3>Intr. Protfolio</h3>
+                  <Link href="/" className="link">
+                    View More
+                  </Link>
+                </div>
+              </div>
+              <div className="hidden-modal">
+                <h3>Project Details</h3>
+                <p>
+                  This is a detailed description of the project. It includes
+                  information about the technologies used, challenges faced, and
+                  features implemented.
+                </p>
+                <Link className="link" href="/">
+                  Close
                 </Link>
               </div>
             </div>
