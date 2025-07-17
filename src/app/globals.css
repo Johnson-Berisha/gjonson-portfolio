@@ -294,7 +294,13 @@ span {
 }
 
 .project h3 {
-  margin-top: 1rem;
   font-size: 1.1rem;
   color: var(--color-text);
+}
+
+.project-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }

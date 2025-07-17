@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/nav/nav";
+import Nav from "@/components/nav/nav.jsx";
 import ProgressBar from "@/components/progressbar/progressbar";
 import Socials from "@/components/socials/socials";
 

@@ -129,7 +129,13 @@ export default function Home() {
                 height={200}
                 className="project-image"
               />
-              <h3>Project 1</h3>
+
+              <div className="project-desc">
+                <h3>Intr. Protfolio</h3>
+                <Link href="/" className="link">
+                  View More
+                </Link>
+              </div>
             </div>
             <div className="project">
               <Image
@@ -139,9 +145,14 @@ export default function Home() {
                 height={200}
                 className="project-image"
               />
-              <h3>Project 2</h3>
+              <div className="project-desc">
+                <h3>Berisha AL</h3>
+                <Link href="/" className="link">
+                  View More
+                </Link>
+              </div>
             </div>
-            <div className="project demo">demo</div>
+            <div className="project demo">Demo</div>
             <div className="project demo">demo</div>
             <div className="project demo">demo</div>
             <div className="project">
