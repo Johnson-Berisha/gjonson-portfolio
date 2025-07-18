@@ -61,12 +61,6 @@ export default function Home() {
     };
   }, []);
 
-  // modal for the idividual projects on showcase
-  function project1Modal() {
-    const project1 = document.querySelector(".p1");
-    project1.classList.toggle("active-modal");
-  }
-
   return (
     <main>
       {/* <h1 className="heading-xl">XL Heading</h1>
@@ -129,39 +123,15 @@ export default function Home() {
         <div className="scroll-breakout">
           <div className="projects-cards" ref={scrollRef}>
             <div className="project p1">
-              <div className="unhidden">
-                <Image
-                  src="/interactive-protfolio.png"
-                  alt="Project 1"
-                  width={300}
-                  height={200}
-                  className="project-image"
-                />
-
-                <div className="project-desc">
-                  <h3>Intr. Protfolio</h3>
-                  <Link
-                    href="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      project1Modal();
-                    }}
-                    className="link"
-                  >
-                    View More
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden-modal">
-                <h3>Project Details</h3>
-                <p>
-                  This is a detailed description of the project. It includes
-                  information about the technologies used, challenges faced, and
-                  features implemented.
-                </p>
-                <Link className="link" href="/">
-                  Close
-                </Link>
+              <Image
+                src="/interactive-protfolio.png"
+                alt="Project 1"
+                width={300}
+                height={200}
+                className="project-image"
+              />
+              <div className="hidden-btn">
+                <button className="btn">Learn More</button>
               </div>
             </div>
             <div className="project p2">
@@ -172,25 +142,28 @@ export default function Home() {
                 height={200}
                 className="project-image"
               />
-              <div className="project-desc">
-                <h3>Berisha AL</h3>
-                <Link href="/" className="link">
-                  View More
+              <div className="hidden-btn">
+                <Link className="btn" href="./projects/berisha-al">
+                  Learn More
                 </Link>
               </div>
             </div>
-            <div className="project demo">Demo</div>
-            <div className="project demo">demo</div>
-            <div className="project demo">demo</div>
-            <div className="project">
-              <div
-                style={{
-                  width: "800px",
-                  height: "200px",
-                  background: "#333",
-                }}
-              >
-                Big test box
+            <div className="project demo">
+              Demo
+              <div className="hidden-btn">
+                <button className="btn">Learn More</button>
+              </div>
+            </div>
+            <div className="project demo">
+              demo
+              <div className="hidden-btn">
+                <button className="btn">Learn More</button>
+              </div>
+            </div>
+            <div className="project demo">
+              demo
+              <div className="hidden-btn">
+                <button className="btn">Learn More</button>
               </div>
             </div>
           </div>
