@@ -70,6 +70,8 @@ body {
   cursor: pointer;
   font-family: var(--font-body);
   transition: background var(--transition);
+
+  text-decoration: none; /*if links have the btn class*/
 }
 
 .btn:hover {

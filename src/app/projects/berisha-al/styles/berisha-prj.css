@@ -14,6 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #12161d;*/
+
+  background-color: #0d1117;
+  opacity: 0.8;
+  background-image: radial-gradient(#484b4e 0.5px, #0d1117 0.5px);
+  background-size: 10px 10px;
 
   /* background-color: red; */
   /* for test*/
@@ -22,7 +28,11 @@
 .project-detail {
   height: 15%;
   width: 100%;
-  background-color: blue; /* for test */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
 }
 
 .img-logo {
@@ -30,4 +40,8 @@
   height: 128px;
   background-image: url("../berisha-logo.svg");
   background-repeat: no-repeat;
+}
+.date span,
+.name span {
+  padding: 0;
 }

@@ -131,7 +131,9 @@ export default function Home() {
                 className="project-image"
               />
               <div className="hidden-btn">
-                <button className="btn">Learn More</button>
+                <Link className="btn" href="/">
+                  Learn More
+                </Link>
               </div>
             </div>
             <div className="project p2">
