@@ -1,3 +1,12 @@
+.berisha-prj {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .showcase {
   display: flex;
   flex-direction: column;
@@ -44,4 +53,22 @@
 .date span,
 .name span {
   padding: 0;
+}
+.description {
+  height: 100vh;
+
+  width: 100%;
+  padding: 1rem 8rem;
+}
+
+.description p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
 }

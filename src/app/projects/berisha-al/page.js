@@ -1,5 +1,6 @@
 // import css
 import "./styles/berisha-prj.css";
+import Image from "next/image";
 
 export default function BerishaPrj() {
   return (
@@ -17,6 +18,57 @@ export default function BerishaPrj() {
             <span className="date-placeholder">Year</span>
             <h1>2023</h1>
           </div>
+        </div>
+      </div>
+      <div className="description">
+        <p>
+          Berisha AL is a project that showcases the work of a talented
+          construcsion group in Kosovo. It highlights their achievements and
+          contributions in their field.
+        </p>
+        <div className="image-grid">
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
+          <Image
+            src="/berisha-al.png"
+            width={300}
+            height={200}
+            alt="prj1"
+            className="prj-img"
+          ></Image>
         </div>
       </div>
     </div>
