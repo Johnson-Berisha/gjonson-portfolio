@@ -1,19 +1,19 @@
-// import css
-import "./styles/berisha-prj.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BerishaPrj() {
+import "./styles/portfolio-prj.css";
+
+export default function IntrPortfolio() {
   return (
     <div className="berisha-prj">
       <div className="showcase">
         <div className="logo">
-          <div className="img-logo"></div>
+          <div className="img-logo portfolio-logo"></div>
         </div>
         <div className="project-detail">
           <div className="name">
             <span className="name-placeholder">Project</span>
-            <h1>Berisha AL</h1>
+            <h1>LenisJS Portfolio</h1>
           </div>
           <div className="date">
             <span className="date-placeholder">Year</span>
@@ -23,48 +23,48 @@ export default function BerishaPrj() {
       </div>
       <div className="description">
         <p>
-          Berisha AL is a project that showcases the work of a talented
-          construcsion group in Kosovo. It highlights their achievements and
-          contributions in their field.
+          This is a personal project, where I experimented with interactive
+          tools like Lenis JS and Gsap. It is themed as my own portfolio
+          website.
         </p>
         <div className="image-grid">
           <Image
-            src="/berisha-al.png"
+            src="/interactive-protfolio.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-2.png"
+            src="/portfolio-img/portfolio-1.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-4.png"
+            src="/portfolio-img/portfolio-3.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-3.png"
+            src="/portfolio-img/portfolio-4.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-5.png"
+            src="/portfolio-img/portfolio-5.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-6.png"
+            src="/portfolio-img/portfolio-6.png"
             width={300}
             height={200}
             alt="prj1"
@@ -72,7 +72,7 @@ export default function BerishaPrj() {
           ></Image>
         </div>
         <div className="link">
-          <Link href="https://berishaal.vercel.app/" className="link">
+          <Link href="https://beta-jb.vercel.app/" className="link">
             View Website
           </Link>
         </div>

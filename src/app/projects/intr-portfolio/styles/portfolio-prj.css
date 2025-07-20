@@ -45,9 +45,9 @@
 }
 
 .img-logo {
-  width: 304px;
-  height: 128px;
-  background-image: url("../berisha-logo.svg");
+  width: 240px;
+  height: 52px;
+  background-image: url("../logo.svg");
   background-repeat: no-repeat;
 }
 .date span,
