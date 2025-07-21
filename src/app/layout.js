@@ -4,6 +4,8 @@ import Nav from "@/components/nav/nav.jsx";
 import ProgressBar from "@/components/progressbar/progressbar";
 import Socials from "@/components/socials/socials";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
         <ProgressBar />
         <Nav />
         <Socials />
+        <Analytics />
       </body>
     </html>
   );
