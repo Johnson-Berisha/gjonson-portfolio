@@ -1,0 +1,57 @@
+.projects-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects-cards {
+  gap: 5rem;
+}
+
+.project {
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(121, 193, 255, 0.027);
+
+  /* for content inside */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project .project-name {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
+}
+
+.project .hidden-btn {
+  height: 15%;
+  /* background: blue; */
+}
+
+.img-logo {
+  width: 304px;
+  height: 128px;
+  background-image: url("./berisha-al/berisha-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.p2 .img-logo {
+  width: 240px;
+  height: 52px;
+  background-image: url("./intr-portfolio/logo.svg");
+
+  transform: translateY(20px);
+}
+
+.project:hover .hidden-btn {
+  transform: translateY(-50px);
+}
