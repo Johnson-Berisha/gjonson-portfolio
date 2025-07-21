@@ -36,35 +36,35 @@ export default function BerishaPrj() {
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-2.png"
+            src="/berisha-al-img/berisha-al-2.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-4.png"
+            src="/berisha-al-img/berisha-al-4.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-3.png"
+            src="/berisha-al-img/berisha-al-3.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-5.png"
+            src="/berisha-al-img/berisha-al-5.png"
             width={300}
             height={200}
             alt="prj1"
             className="prj-img"
           ></Image>
           <Image
-            src="/berisha-al-6.png"
+            src="/berisha-al-img/berisha-al-6.png"
             width={300}
             height={200}
             alt="prj1"
