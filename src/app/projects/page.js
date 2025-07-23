@@ -73,7 +73,7 @@ export default function ProjectsPage() {
                 <div className="img-logo"></div>
               </div>
               <div className="hidden-btn">
-                <Link href="/" className="btn">
+                <Link href="./projects/berisha-al" className="btn">
                   View More
                 </Link>
               </div>
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                 <div className="img-logo"></div>
               </div>
               <div className="hidden-btn">
-                <Link href="/" className="btn">
+                <Link href="./projects/intr-portfolio" className="btn">
                   View More
                 </Link>
               </div>
