@@ -174,8 +174,8 @@ export default function Home() {
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: youremail@example.com</p>
-        <p>WhatsApp: +383 6x xxx xxx</p>
+        <p>gjonsonberisha@email.com</p>
+        <p>+383 48 711 544</p>
       </section>
 
       <footer>

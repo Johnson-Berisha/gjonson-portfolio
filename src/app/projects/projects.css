@@ -7,12 +7,11 @@
   height: 100vh;
 }
 
-.projects-cards {
+.big-projects-cards {
   gap: 5rem;
 }
 
-.project,
-.p2 {
+.big-project {
   width: 1000px;
   height: 600px;
   background-color: rgba(121, 193, 255, 0.027);
@@ -32,7 +31,7 @@
   justify-content: center;
   /* background: red; */
 }
-.project .hidden-btn {
+.big-project .hidden-btn {
   height: 15%;
   /* background: blue; */
 }
@@ -44,7 +43,7 @@
   background-repeat: no-repeat;
 }
 
-.p2 .img-logo {
+.big-project .p2 .img-logo {
   width: 240px;
   height: 52px;
 
@@ -53,6 +52,6 @@
   transform: translateY(20px);
 }
 
-.project:hover .hidden-btn {
+.big-project:hover .hidden-btn {
   transform: translateY(-50px);
 }

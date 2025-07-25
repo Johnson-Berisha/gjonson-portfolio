@@ -67,8 +67,8 @@ export default function ProjectsPage() {
     <div className="projects-showcase">
       <div className="projects">
         <div className="scroll-breakout">
-          <div className="projects-cards" ref={scrollRef}>
-            <div className="project p1">
+          <div className="projects-cards big-project-cards" ref={scrollRef}>
+            <div className="project p1 big-project">
               <div className="project-name">
                 <div className="img-logo"></div>
               </div>
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
                 </Link>
               </div>
             </div>
-            <div className="project p2">
+            <div className="project p2 big-project">
               <div className="project-name">
                 <div className="img-logo"></div>
               </div>
@@ -88,9 +88,9 @@ export default function ProjectsPage() {
                 </Link>
               </div>
             </div>
-            <div className="project demo"></div>
-            <div className="project demo"></div>
-            <div className="project demo"></div>
+            <div className="project demo big-project"></div>
+            <div className="project demo big-project"></div>
+            <div className="project demo big-project"></div>
           </div>
         </div>
       </div>
