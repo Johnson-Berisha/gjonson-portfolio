@@ -11,6 +11,14 @@ export default function Nav() {
     hamburger?.addEventListener("click", () => {
       menu?.classList.toggle("open");
     });
+
+    // Close menu when clicking link
+    const menuLinks = document.querySelectorAll(".menu-link");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu?.classList.remove("open");
+      });
+    });
   }, []);
 
   return (
@@ -51,25 +59,25 @@ export default function Nav() {
         <div className="actual-menu">
           <ul>
             <li>
-              <Link href="/" className="link">
+              <Link href="/" className="link menu-link">
                 Home
                 <div className="underline shorter-underline"></div>
               </Link>
             </li>
             <li>
-              <Link href="/about" className="link">
+              <Link href="/about" className="link menu-link">
                 About
                 <div className="underline shorter-underline"></div>
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="link">
+              <Link href="/projects" className="link menu-link">
                 Projects
                 <div className="underline longer-underline"></div>
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="link">
+              <Link href="/contact" className="link menu-link">
                 Contact
                 <div className="underline longer-underline"></div>
               </Link>
