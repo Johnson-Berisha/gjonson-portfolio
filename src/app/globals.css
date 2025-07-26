@@ -165,9 +165,16 @@ nav li:hover .shorter-underline {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 2rem 3rem;
+  font-size: 2rem;
 
   display: none;
+  transition: transform 0.3s ease;
   transform: translate(-100%, 0);
+}
+
+.actual-menu ul li {
+  margin: 2rem 0.5rem;
 }
 
 .hamburger {
@@ -192,9 +199,20 @@ nav li:hover .shorter-underline {
   border-radius: 5px;
 }
 
+.open {
+  transform: translate(0, 0);
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     display: block;
+  }
+
+  .normal-menu {
+    display: none;
+  }
+  .underline {
+    display: none;
   }
 }
 

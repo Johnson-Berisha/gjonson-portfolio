@@ -1,9 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Nav() {
+  useEffect(() => {
+    const menu = document.querySelector(".menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    hamburger?.addEventListener("click", () => {
+      menu?.classList.toggle("open");
+    });
+  }, []);
+
   return (
     <nav>
-      <ul>
+      <ul className="normal-menu">
         <li>
           <Link href="/" className="link">
             Home
@@ -30,12 +42,12 @@ export default function Nav() {
         </li>
       </ul>
       {/* hamburger menu */}
+      <div className="hamburger">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="menu">
-        <div className="hamburger">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
         <div className="actual-menu">
           <ul>
             <li>
