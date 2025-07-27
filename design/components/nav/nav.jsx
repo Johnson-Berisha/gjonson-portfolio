@@ -31,12 +31,6 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/about" className="link">
-            About
-            <div className="underline shorter-underline"></div>
-          </Link>
-        </li>
-        <li>
           <Link href="/projects" className="link">
             Projects
             <div className="underline longer-underline"></div>
@@ -61,12 +55,6 @@ export default function Nav() {
             <li>
               <Link href="/" className="link menu-link">
                 Home
-                <div className="underline shorter-underline"></div>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="link menu-link">
-                About
                 <div className="underline shorter-underline"></div>
               </Link>
             </li>

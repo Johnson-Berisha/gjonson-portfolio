@@ -178,7 +178,7 @@ nav li:hover .shorter-underline {
 }
 
 .hamburger {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -205,6 +205,9 @@ nav li:hover .shorter-underline {
 
 @media screen and (max-width: 768px) {
   .menu {
+    display: block;
+  }
+  .hamburger {
     display: block;
   }
 
