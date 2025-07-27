@@ -188,6 +188,7 @@ nav li:hover .shorter-underline {
   border: none;
   cursor: pointer;
   z-index: 2000;
+  color: rgba(255, 255, 255, 0.208);
 }
 
 .hamburger .line {
