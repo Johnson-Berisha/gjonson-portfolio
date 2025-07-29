@@ -23,3 +23,18 @@
   border: 1px solid #202730;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .big-title {
+    font-size: 2rem;
+    translate: 0;
+    height: 20vh;
+  }
+  .contact-links {
+    flex-direction: column;
+    height: 70vh;
+  }
+  .contact-link {
+    padding: 2.5rem 1.5rem;
+  }
+}
