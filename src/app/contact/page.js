@@ -19,29 +19,23 @@ const ContactPage = () => {
         </div>
         <div className="contact-link">
           <div className="placeholder-social">Twitter/X</div>
-          <Link
-            href="https://www.facebook.com/gjonson.berisha.1/"
-            className="link"
-          >
-            @gjonson.berisha.1
+          <Link href="https://twitter.com/BerishaGjonson" className="link">
+            @BerishaGjonson
           </Link>
         </div>
         <div className="contact-link">
           <div className="placeholder-social">GitHub</div>
-          <Link
-            href="https://www.facebook.com/gjonson.berisha.1/"
-            className="link"
-          >
-            @gjonson.berisha.1
+          <Link href="https://github.com/Johnson-Berisha/" className="link">
+            @Johnson-Berisha
           </Link>
         </div>
         <div className="contact-link">
           <div className="placeholder-social">Instagram</div>
           <Link
-            href="https://www.facebook.com/gjonson.berisha.1/"
+            href="https://www.instagram.com/johnson_berisha/"
             className="link"
           >
-            @gjonson.berisha.1
+            @johnson_berisha
           </Link>
         </div>
       </div>
