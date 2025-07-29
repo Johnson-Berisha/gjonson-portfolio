@@ -119,4 +119,7 @@
   .name span {
     text-align: center;
   }
+  .prj-img:hover {
+    transform: scale(1);
+  }
 }
