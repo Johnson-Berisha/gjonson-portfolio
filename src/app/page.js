@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <h2 className="heading-md">Contact</h2>
         <p>gjonsonberisha@email.com</p>
         <p>+383 48 711 544</p>
       </section>

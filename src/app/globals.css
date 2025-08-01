@@ -49,6 +49,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* mouse trail */
+#trail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.trail-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
 /* mini design system */
 
 /* -- links -- */
@@ -85,6 +111,7 @@ body {
   font-size: var(--font-size-xl);
   font-weight: 700;
   margin-bottom: var(--spacing-lg);
+  font-family: "merriweather", serif;
 }
 
 .heading-lg {
@@ -96,6 +123,9 @@ body {
 .heading-md {
   font-size: var(--font-size-lg);
   font-weight: 300;
+  color: var(--color-accent);
+
+  font-family: "merriweather", serif;
   /* margin-bottom: var(--spacing-sm); */
 }
 
@@ -246,6 +276,13 @@ header {
 
 header .title {
   margin-bottom: 0;
+  color: var(--color-accent);
+}
+
+header .title-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  color: var(--color-text-secondary);
 }
 
 .potrait-side {

@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "@/components/nav/nav.jsx";
 import ProgressBar from "@/components/progressbar/progressbar";
 import Socials from "@/components/socials/socials";
+import MouseTrail from "@/components/mouseTrail/MouseTrail";
 
 import { Analytics } from "@vercel/analytics/next";
 
@@ -29,6 +30,8 @@ export default function RootLayout({ children }) {
         <ProgressBar />
         <Nav />
         <Socials />
+        <MouseTrail />
+
         <Analytics />
       </body>
     </html>
