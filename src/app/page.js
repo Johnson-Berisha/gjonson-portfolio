@@ -118,7 +118,7 @@ export default function Home() {
 
       <section id="projects">
         <h2 className="heading-md">Projects</h2>
-        <p>Some of the projects I’ve worked on and am still working on:</p>
+        <p>A selection of projects I have developed and continue to enhance</p>
 
         <div className="scroll-breakout">
           <div className="projects-cards" ref={scrollRef}>
@@ -151,19 +151,19 @@ export default function Home() {
               </div>
             </div>
             <div className="project demo">
-              Demo
+              Coming soon...
               <div className="hidden-btn">
                 <button className="btn">Learn More</button>
               </div>
             </div>
             <div className="project demo">
-              demo
+              Coming soon...
               <div className="hidden-btn">
                 <button className="btn">Learn More</button>
               </div>
             </div>
             <div className="project demo">
-              demo
+              Coming soon...
               <div className="hidden-btn">
                 <button className="btn">Learn More</button>
               </div>
