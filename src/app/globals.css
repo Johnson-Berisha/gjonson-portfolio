@@ -377,7 +377,7 @@ span {
   margin-left: -50vw;
   margin-right: -50vw;
   overflow-x: visible;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .projects-cards {
