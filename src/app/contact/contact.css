@@ -28,7 +28,6 @@
   .big-title {
     font-size: 2rem;
     translate: 0;
-    height: 20vh;
   }
   .contact-links {
     flex-direction: column;

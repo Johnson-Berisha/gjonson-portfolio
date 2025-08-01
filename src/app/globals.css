@@ -457,3 +457,11 @@ span {
 .project:hover .project-image {
   opacity: 0.1;
 }
+
+.help {
+  padding: 0.5rem 1rem;
+  background-color: #151b23;
+  width: fit-content;
+  color: var(--color-text-secondary);
+  border-radius: var(--border-radius);
+}

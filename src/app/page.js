@@ -121,7 +121,7 @@ export default function Home() {
 
       <section id="projects">
         <h2 className="heading-md">Projects</h2>
-        <p>A selection of projects I have developed and continue to enhance</p>
+        <p>A selection of projects I have developed and continue to enhance.</p>
 
         <div className="scroll-breakout">
           <div className="projects-cards" ref={scrollRef}>
@@ -173,6 +173,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <span className="help">Drag right to view more projects!</span>
       </section>
 
       <section id="contact">
