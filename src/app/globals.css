@@ -75,6 +75,38 @@ body {
   }
 }
 
+/* name pronouncuation */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+
+  position: absolute;
+  bottom: 125%; /* above the text */
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  white-space: nowrap;
+  z-index: 1;
+
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
 /* mini design system */
 
 /* -- links -- */

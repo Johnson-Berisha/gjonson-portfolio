@@ -74,7 +74,10 @@ export default function Home() {
       </a> */}
       <header>
         <div className="title-side">
-          <h1 className="heading-xl title">Gjonson Berisha</h1>
+          <div className="tooltip">
+            <h1 className="heading-xl title">Gjonson Berisha</h1>
+            <span className="tooltip-text">Jon-sohn Beh-ree-shah</span>
+          </div>
           <p className="heading-md title-desc">Web Developer</p>
         </div>
         <div className="potrait-side">
