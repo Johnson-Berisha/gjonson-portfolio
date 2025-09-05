@@ -166,7 +166,7 @@ export default function Home() {
               </div>
             </div>
             <div className="project demo">
-              Coming soon...
+              Coming soon... and also new pc
               <div className="hidden-btn">
                 <button className="btn">Learn More</button>
               </div>
