@@ -1,19 +1,24 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .big-title {
-  height: 60vh;
-  /* background: blue; */
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  translate: 0 50px;
 }
 .contact-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  height: 40vh;
-  /* background: red; */
+  height: 20vh;
 }
 
 .contact-link {
@@ -27,7 +32,7 @@
 @media screen and (max-width: 768px) {
   .big-title {
     font-size: 2rem;
-    translate: 0;
+    padding-bottom: 50px;
   }
   .contact-links {
     flex-direction: column;
