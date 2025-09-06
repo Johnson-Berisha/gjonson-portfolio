@@ -65,7 +65,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="projects-showcase">
-      <span className="help">Drag right to view more projects!</span>
+      <span className="help">Drag to view more projects!</span>
       <div className="projects">
         <div className="scroll-breakout">
           <div className="projects-cards big-project-cards" ref={scrollRef}>

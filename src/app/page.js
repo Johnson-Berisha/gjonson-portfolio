@@ -173,7 +173,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <span className="help">Drag right to view more projects!</span>
+        <span className="help">Drag left to view more projects!</span>
       </section>
 
       <section id="contact">
